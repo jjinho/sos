@@ -11,8 +11,6 @@
 # Returns:
 # 	data.frame that has the matched data (called by 'match.data(m.out)' with a
 #	  new column called STRATA which has the n-sized matched group information
-library(data.table)
-library(dplyr)
 match_data_groups <- function(m.out, df, join_index) {
     m <- setDT(as.data.frame(m.out$match.matrix), keep.rownames=T)[]
     m <- as.matrix(m)
