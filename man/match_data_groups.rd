@@ -53,3 +53,4 @@ library(MatchIt)
 # m.out was already created by calling 'matchit'
 
 matched_data <- match_data_groups(m.out, prematch_data, join_index="ID")
+}

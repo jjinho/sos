@@ -8,7 +8,7 @@ Univariate Analysis
 Performs univariate analysis of selected variables within a dataframe.
 }
 \usage{
-univariate_analysis(df, dep_var_name, var_list)
+univariate_analysis(df, dep_var_name, var_list, round_digits=2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
