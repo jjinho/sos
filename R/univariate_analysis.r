@@ -86,13 +86,13 @@ univariate_analysis <- function(df, dep_var_name, var_list, round_digits=2) {
       # Make a table
       t <- table(df[,dep_var_name], df[,n])
 
-      cat("df1_n =", l1, "\n")
+      cat(paste0(l1, " (n=", length(df1_n), ")\n"))
       for(l in levels(df1_n)) {
         cat(paste0(l, ": ", length(df1_n[which(df1_n==l)]), "(", round(length(df1_n[which(df1_n==l)]) / length(df1_n) * 100, round_digits), ")\n"))
       }
       cat("\n")
 
-      cat("df2_n =", l2, "\n")
+      cat(paste0(l2, " (n=", length(df2_n), ")\n"))
       for(l in levels(df1_n)) {
         cat(paste0(l, ": ", length(df2_n[which(df2_n==l)]), "(", round(length(df2_n[which(df2_n==l)]) / length(df2_n) * 100, round_digits), ")\n"))
       }
